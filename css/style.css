@@ -1,7 +1,132 @@
-a{
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.nav-link {
     color:green !important;
+    margin-left:20px ;
+    margin-right: 20px;
+  
 }
 
+.nav-link:hover{
+   
+    color:red !important;
+}
+
+
+.navtext1:hover::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: rgba(130, 184, 26, 1);
+    transform: translateX(-100%) translateY(22px);
+    animation: .5s;
+    animation-name: efecto-banner1;
+    animation-fill-mode: forwards;
+   
+}
+
+@keyframes efecto-banner1 {
+    from {
+        opacity: 0;
+        width: 0px;
+    }
+    to {
+        opacity: 1;
+        width: 54px;
+    }
+}
+.navtext2:hover::after{
+    position: absolute;
+    content: "";
+    width: 131px;
+    height: 3px;
+    background-color: rgba(130, 184, 26, 1);
+    transform: translateX(-100%) translateY(22px);
+    animation: .5s;
+    animation-name: efecto-banner2;
+    animation-fill-mode: forwards;
+   
+}
+@keyframes efecto-banner2 {
+    from {
+        opacity: 0;
+        width: 0px;
+    }
+    to {
+        opacity: 1;
+        width: 131px;
+    }
+}
+.navtext3:hover::after{
+    position: absolute;
+    content: "";
+    width: 111px;
+    height: 3px;
+    background-color: rgba(130, 184, 26, 1);
+    transform: translateX(-100%) translateY(22px);
+    animation: .5s;
+    animation-name: efecto-banner3;
+    animation-fill-mode: forwards;
+   
+}
+
+@keyframes efecto-banner3 {
+    from {
+        opacity: 0;
+        width: 0px;
+    }
+    to {
+        opacity: 1;
+        width: 111px;
+    }
+}
+.navtext4:hover::after{
+    position: absolute;
+    content: "";
+    width: 176px;
+    height: 3px;
+    background-color: rgba(130, 184, 26, 1);
+    transform: translateX(-100%) translateY(22px);
+    animation: .5s;
+    animation-name: efecto-banner4;
+    animation-fill-mode: forwards;
+   
+}
+@keyframes efecto-banner4 {
+    from {
+        opacity: 0;
+        width: 0px;
+    }
+    to {
+        opacity: 1;
+        width: 176px;
+    }
+}
+.navtext5:hover::after{
+    position: absolute;
+    content: "";
+    width: 82px;
+    height: 3px;
+    background-color: rgba(130, 184, 26, 1);
+    transform: translateX(-100%) translateY(22px);
+    animation: .5s;
+    animation-name: efecto-banner5;
+    animation-fill-mode: forwards;
+   
+}
+@keyframes efecto-banner5 {
+    from {
+        opacity: 0;
+        width: 0px;
+    }
+    to {
+        opacity: 1;
+        width: 82px;
+    }
+}
 .navbar-light{
     background: white !important;
     border-bottom: 2px solid red ;
@@ -9,26 +134,130 @@ a{
 
 .imglogo{
     width: 250px;
-    height: 150px;
+    height: 125px;
 }
 .tamcarrusel{
   
     padding: 0px;
 }
 
+
+
+.slidecac1{
+    position: relative;
+    display: inline-block;
+      height: 600px;
+    width: 100%; 
+    background-image: url("../img/slider001.jpg");
+   background-size: cover; 
+   
+}
+.slidecac2{
+    position: relative;
+    display: inline-block;
+      height: 600px;
+    width: 100%; 
+    background-image: url("../img/slider002.jpg");
+   background-size: cover;  
+ 
+}
+.slidecac3{
+    position: relative;
+    display: inline-block;
+      height: 600px;
+    width: 100%; 
+    background-image: url("../img/slider003.jpg");
+   background-size: cover;   
+   
+}
+
+.slider1txt{
+position: absolute;
+top:10px;
+left: 10%;
+font-size: 16px;
+
+
+}
+
+/* .slider1txt{
+    position: absolute;
+    top:10px;
+    font-size: 10px;
+
+} */
+
+/* .slider1txt{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} */
+
+
+
 .eslogan{
+   opacity: 0;
     text-align: center;
-    margin: 50px;
-    padding-top: 25px;
+    margin: 45px;
+    padding-top: 20px;
+}
+
+.animacion{
+    animation: .5s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+.animacion2{
+    animation: .5s;
+    animation-delay: .75s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+.animacion3{
+    animation: .5s;
+    animation-delay: 1s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+.animacion4{
+    animation: .5s;
+    animation-delay: 1.25s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+.animacion5{
+    animation: .5s;
+    animation-delay: 1.50s;
+    animation-name: aparecer;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer{
+    from {
+        opacity: 0;
+       
+    }
+    to {
+        opacity: 1;
+      
+    }
 }
 .eslogan2{
+    opacity: 0;
     text-align: center;
     margin: 25px;
     padding-top: 25px;
     font-size: 25px;
 }
 
-
+.imgeslogan{
+ width: 20vw;
+ height: 20vw;
+}
 .slider1txt1{
     position: absolute;
      top: 200px; 
@@ -45,7 +274,7 @@ a{
 
 .eslogancont{
         display: flex;
-        margin: 75px;
+        margin: 5px;
         padding-bottom:25px ;
         text-align: center;
         justify-content: center;
@@ -57,12 +286,16 @@ a{
 .esloganimg::after{
     position: absolute;
     content: "";
-    transform: translateX(-95%);
+    transform: translateX(-100%);
 
-    width: 300px;
-    height: 300px;
+    width: 21vw;
+    height: 21vw;
     background-color: rgba(130, 184, 26, .1);
-    border-radius: 150px;
+    border-radius: 21vw;
+}
+
+.esloganimg{
+    opacity: 0;
 }
 
 .divcontacto{
@@ -77,6 +310,7 @@ a{
 .txtcontacto{
  
  font-size: 7.5vw;
+ color:white;
  height: 20%;
 
 }
@@ -88,9 +322,11 @@ a{
 
 .btncontacto{
     width: 25%;
-   background-color: white;
+   background-color:  white;
    color: rgba(130, 184, 26, 1);
     height: 20%;
+    font-size: 2.5vw;
+    margin-top: 100px;
    
 }
 
@@ -101,9 +337,7 @@ hr{
     border-radius: 5px;
 }
 
-.btncontacto{
- margin-top: 100px;
-}
+
 
 .fab{
     color: white;

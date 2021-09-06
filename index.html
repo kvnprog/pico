@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!-- <link href="css/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,19 +28,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            <a class="nav-link active" aria-current="page" href="#"><p class="navtext1" >INICIO</p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">QUIENES SOMOS?</a>
+            <a class="nav-link active" href="#"><p class="navtext2" >QUIENES SOMOS?</p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">DISTRUBUCION</a>
+            <a class="nav-link active" href="#"><p class="navtext3" >DISTRUBUCION</p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">NUESTROS PRODUCTOS</a>
+            <a class="nav-link active" href="#"><p class="navtext4" >NUESTROS PRODUCTOS</p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">CONTACTO</a>
+            <a class="nav-link active" href="#"><p class="navtext5" >CONTACTO</p></a>
           </li>
 
         </ul>
@@ -48,15 +51,28 @@
   <!-- //carrusel -->
   <div class="container-fluid tamcarrusel">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="img/slider001.jpg" height="600px" alt="First slide">
+      <div class="carousel-inner  ">
+        <div class="carousel-item  active ">
+           <!-- <img class="d-block w-100 slider1 " src="img/slider001.jpg" height="600px" alt="First slide">  -->
+          <div class=slidecac1>
+            <h1 class="slider1txt">Los Mejores Productos</h1> 
+          </div>
+           
+          
+        
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/slider002.jpg" height="600px" alt="Second slide">
+        <div class="carousel-item ">
+          <div class=slidecac2>
+            <h1 class="slider1txt">Los Mejores Productos</h1> 
+          </div>
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/slider003.jpg" height="600px" alt="Third slide">
+        <div class="carousel-item ">
+          <div class=slidecac3>
+          <div class="slider1txt">
+            <h1 >Los Mejores Productos</h1> 
+          </div>
+           
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -71,20 +87,20 @@
   </div>
   <!-- ponele sabor parte -->
 
-  <h2 class="eslogan">LE PONE SABOR A TU VIDA</h2>
+  <h2 class="eslogan" id="eslogan">LE PONE SABOR A TU VIDA</h2>
   <hr width="75%" />
   <br>
   <br>
-  <p class="eslogan2">La mayor variedad de Chiles Molidos y Especias de México las encontrarás en EL PICOSITO.</p>
+  <p class="eslogan2" id="eslogan2">La mayor variedad de Chiles Molidos y Especias de México las encontrarás en EL PICOSITO.</p>
   <div class="row eslogancont">
-    <div class="col-lg-4 esloganimg">
-      <img src="img/eslogan1.png" width="250px" height="250px" alt="">
+    <div class=" col-lg-4 esloganimg "  id="eslogan3">
+      <img src="img/eslogan1.png" class="imgeslogan" alt="">
     </div>
-    <div class="col-lg-4 esloganimg">
-      <img src="img/eslogan2.png" width="250px" height="250px" alt="">
+    <div class="col-lg-4 esloganimg" id="eslogan4"> 
+      <img src="img/eslogan2.png" class="imgeslogan"  alt="">
     </div>
-    <div class="col-lg-4 esloganimg">
-      <img src="img/eslogan3.png" width="250px" height="250px" alt="">
+    <div class="col-lg-4 esloganimg" id="eslogan5">
+      <img src="img/eslogan3.png" class="imgeslogan" alt="">
     </div>
   </div>
 
@@ -130,9 +146,13 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-
+ 
+   
+   </script>
 
 </body>
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -142,5 +162,6 @@
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/funciones.js"></script>
 
 </html>
